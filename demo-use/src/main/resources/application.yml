@@ -1,0 +1,18 @@
+server:
+  port: 8090
+spring:
+  application:
+    name: demo-use
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/mydata?characterEncoding=utf8&useSSL=false
+    name: root
+    password: 239100027
+    driver-class-name: com.mysql.cj.jdbc.Driver
+mybatis:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: true #配置驼峰⾃动转换
